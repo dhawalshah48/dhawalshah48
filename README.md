@@ -3,7 +3,7 @@
 Graduate AI/ML engineer with **5+ years** of experience building and deploying **scalable ML systems**—especially for **document processing automation**, **NLP**, and **computer vision** on **AWS**.  
 **Open to work anywhere in the USA.**
 
-- M.S. in Computer Science (AI), **Iowa State University** (GPA: **3.9/4.0**, Aug 2024 – May 2026)
+- M.S. in Computer Science (AI), **Iowa State University** (GPA: **3.9/4.0**, Aug 2024 – Aug 2026)
 - Production ML + MLOps: training, evaluation, deployment, monitoring, cost/security optimization
 - Cloud + infra: **AWS (S3, SageMaker, Comprehend, Textract, EKS, EC2, EMR)**, **Docker**, **Kubernetes**, **ClearML**
 
