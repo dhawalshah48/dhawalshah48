@@ -6,7 +6,7 @@ M.S. in Computer Science (AI specialization), Iowa State University — GPA 3.9/
 Thesis: *Low-Rank KV Cache Compression in LLMs: A Second-Order Output Metric and Its Limits*
 Open to AI Engineer / ML Engineer / MLOps / LLMOps roles, anywhere in the USA.
 
-📄 [Resume](https://github.com/dhawalshah48/dhawalshah48/blob/main/Dhawal_Shah_ML_Resume_generic.pdf) · 💼 [LinkedIn](https://www.linkedin.com/in/dhawalshah04/) · ✉️ dhawal04@iastate.edu · ✉️ dhawwalshah48@gmail.com
+📄 [Resume](https://github.com/dhawalshah48/dhawalshah48/blob/main/Dhawal_Shah_ML_Resume_generic.pdf) · 💼 [LinkedIn](https://www.linkedin.com/in/dhawalshah04/) · ✉️ dhawal04@iastate.edu · ✉️ dhawalshah48@gmail.com
 
 ## What I do
 
@@ -80,4 +80,4 @@ Interactive OpenCV game: tracks a real ball in-hand via webcam, detects a throw 
 
 ---
 
-📫 Reach me at **dhawalshah48@gmail.com** or on [LinkedIn](https://www.linkedin.com/in/dhawalshah04/).
+📫 Reach me at **dhawalshah48@gmail.com** or **dhawal04@iastate.edu** or on [LinkedIn](https://www.linkedin.com/in/dhawalshah04/).
