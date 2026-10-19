@@ -1,79 +1,85 @@
-# Dhawal Shah
+# Hi, I'm Dhawal Shah 👋
 
-Graduate AI/ML engineer with **5+ years** of experience building and deploying **scalable ML systems**—especially for **document processing automation**, **NLP**, and **computer vision** on **AWS**.  
-**Open to work anywhere in the USA.**
+**AI / ML Engineer · MLOps & LLMOps · 5+ years shipping production ML and agentic systems**
 
-- M.S. in Computer Science (AI), **Iowa State University** (GPA: **3.9/4.0**, Aug 2024 – Aug 2026)
-- Production ML + MLOps: training, evaluation, deployment, monitoring, cost/security optimization
-- Cloud + infra: **AWS (S3, SageMaker, Comprehend, Textract, EKS, EC2, EMR)**, **Docker**, **Kubernetes**, **ClearML**
+M.S. in Computer Science (AI specialization), Iowa State University — GPA 3.9/4.0 (Aug 2024 – Aug 2026)
+Thesis: *Low-Rank KV Cache Compression in LLMs: A Second-Order Output Metric and Its Limits*
+Open to AI Engineer / ML Engineer / MLOps / LLMOps roles, anywhere in the USA.
 
-## Connect
-- GitHub: https://github.com/dhawalshah48  
-- LinkedIn: https://www.linkedin.com/in/dhawalshah04/  
-- Email: dhawal04@iastate.edu
+📄 [Resume](#) · 💼 [LinkedIn](https://www.linkedin.com/in/dhawalshah04/) · ✉️ dhawal04@iastate.edu · ✉️ dhawwalshah48@gmail.com
 
-## Work Experience
+---
 
-### Hermamind Inc. — Software Engineer (AI/ML & Full-Stack) *(Jan 2026 – Aug 2026)*
-Sole/primary engineer on the **Hermamind Pricing MVP** — a multi-tenant, AI-assisted B2B RFQ-to-quote platform for industrial/commodity sales (oilfield tubulars, inventory-backed pricing). Owned the product end-to-end: AI agent design, deterministic pricing engine, backend, frontend, data pipelines, and cloud infra. Core architecture principle: **deterministic pricing formulas in Python; LLMs used only for narration, conversation, and rationale — never for price math.**
-- **AI / Agents:** Designed a **LangGraph** RFQ workflow (`customer_lookup → product_lookup → anchor pricing → quote generation`) with typed Pydantic state; built a multi-provider conversational agent (**OpenAI, Anthropic, Ollama, Qwen/DashScope**) with step-level model routing for cost/latency and human-in-the-loop approval checkpoints
-- **AI / Explainability:** Built a user-preference learner that persists quote-adjustment patterns, and an insights layer generating auditable pricing rationale from structured signals (ATP, margins, history, customer relationship) rather than LLM-invented prices; added bilingual (EN/ZH) tool-explanation UX
-- **Pricing domain logic:** Implemented multi-anchor pricing (historical market anchors + cost/WAC-based), policy-driven margin governance (target/floor/ceiling by customer tier), and an ATP (available-to-promise) calculator over inventory lots, reservations, and shortfalls
-- **Backend:** Built a **FastAPI** surface (~20+ route modules: auth, RFQ, quotes, inventory/lots, inbound shipments, customers, vendors/POs, dashboard, audit trail) on **PostgreSQL** with **SQLAlchemy**/**Alembic**, JWT auth, and a repository + service layer with Pydantic contracts
-- **Multi-tenancy:** Designed central-auth + per-tenant Postgres database isolation via a tenant registry/connection resolver, so customer data never crosses tenants
-- **Data engineering:** Built an Excel/CSV → staging → PostgreSQL ETL pipeline (readers, transformers, validators, orchestrators) supporting FRESH (full replace) and UPSERT (incremental) modes, with SKU normalization and mapping configs
-- **Frontend:** Built the **Next.js 14** (React, Tailwind) UI — auth, quote workspace/detail, operations and stock dashboards (Recharts), inbound-shipment tracking, and an admin data browser with inline editing
-- **DevOps:** Provisioned AWS infra with **Terraform** (VPC, ALB, EC2, RDS, S3), containerized local/staging/prod environments with **Docker Compose**, added **GitHub Actions** CI against a live Postgres service container, and built encrypted S3 backups (boto3) with Celery/APScheduler task scheduling
-- **Quality:** Authored a broad automated test suite (unit, integration, pipeline e2e, migration validation) with pytest and Jest/Playwright config to keep pilot-customer data trustworthy
+## What I do
+
+I build the layer between LLM agents and the deterministic systems they have to work with reliably — typed agent orchestration, model routing, tool-calling frameworks, and the MLOps/LLMOps infrastructure (CI/CD, observability, multi-tenant data isolation) that makes agentic systems safe to ship. Before that, I spent four years building and operating production ML systems (document classification, entity extraction, NLP) in a regulated enterprise environment.
+
+---
+
+## Experience
+
+### Hermamind Inc. — Founding AI Engineer *(Jan 2026 – Aug 2026)*
+Friend's startup; worked directly with the CEO/co-founder on an AI-assisted B2B RFQ-to-quote platform (Hermamind Pricing). Core architecture principle: deterministic pricing logic in Python, LLMs used only for narration/rationale — never for price math.
+
+- Built an agent execution/orchestration layer on **LangGraph** with typed Pydantic state, deterministic transitions, tool invocation, and human-approval checkpoints
+- Designed a typed tool-execution framework for registering, validating, and invoking SQL-backed tools across customer, product, and pricing systems, grounding model outputs in authoritative backend data
+- Built a provider-agnostic model routing layer across **OpenAI, Anthropic, Ollama, and Qwen**, with per-step routing on latency/cost/quality — cut inference cost materially while holding task success flat in internal evals
+- Architected multi-tenant persistence (**PostgreSQL, FastAPI, Alembic**) with central identity metadata separated from tenant-isolated application databases
+- Instrumented the agent workflow with **OpenTelemetry** (traces/metrics/logs) for run-level visibility without logging prompts or pricing payloads
+- Shipped a GitHub Actions CI/CD pipeline with a 200+ test pytest/Playwright suite as a PR merge gate
+- Built async background job execution (FastAPI + Redis) for long-running model training/data jobs
+- Shipped product features directly with the CEO, including a Slack webhook alerting system for CloudWatch-detected outages
+- *(Has a standing offer to return in a remote engineering role after this engagement.)*
 
 ### Digitenium — AI Engineer Intern *(Jun 2025 – Aug 2025)*
-- Built a Python simulation framework (pandas) for a decentralized DeFi liquidity protocol to model asset allocation/redemption flows and engagement; projected **~20%** improvement in asset velocity
+- Built a Python simulation framework (pandas) modeling asset allocation/redemption flows for a decentralized liquidity protocol; projected ~20% improvement in asset velocity
 
-### Avalara Technologies Pvt. Ltd. — Senior Software Engineer (Machine Learning) *(Jul 2023 – Aug 2024)*
-- Built custom document AI models (**Random Forest, Donut, LayoutXLM, LiLT, spaCy**) for document processing; reduced **AWS Comprehend cost by ~90%**
-- Identified and upgraded vulnerable/outdated Python dependencies to improve **security** and **system stability**
-- Led onboarding for **8** new hires in ML best practices and internal systems (**50+ hours**)
+### Avalara Technologies — Senior Software Engineer, Machine Learning *(Jul 2023 – Aug 2024)*
+- Built and deployed production document-AI models (Random Forest, Donut, LayoutXLM, LiLT, spaCy) for document classification and entity extraction
+- Replaced a third-party API with in-house models, cutting inference cost ~90% (benchmarked against AWS Comprehend on a 500-document evaluation set)
+- Identified and upgraded vulnerable/outdated Python dependencies to improve security posture
+- Led onboarding for 8 new engineers — 50+ hours of mentoring, code review, and knowledge-sharing
 
-### Avalara Technologies Pvt. Ltd. — Software Engineer (Machine Learning) *(Jul 2020 – Jun 2023)*
-- Evaluated **AWS Comprehend** on a **500-document** training set with **95%+ accuracy**, influencing adoption for an IDP platform impacting **100,000+ documents**
-- Automated **30%** of manual document processing across teams; reduced processing time **10 min → 1 min** per document
-- Streamlined ML workflows with **ClearML** (experiment tracking + dataset versioning); deployed on **AWS EKS** and ran distributed training on **AWS GPU EC2**, reducing training cost and improving utilization
+### Avalara Technologies — Software Engineer, Machine Learning *(Jul 2020 – Jun 2023)*
+- Automated 30% of 100,000+ manual document-processing decisions across 4 teams, cutting per-document processing time from 10 minutes to 1 minute
+- Built a model abstraction layer that trained multiple candidate models per task and auto-served the best one, so downstream consumers never needed to know which model served a request
+- Deployed and operated services on AWS (SageMaker, EKS, EC2); used ClearML for experiment tracking and model versioning, Label Studio for human-in-the-loop annotation
+- Built a Scala/Akka Streams + PySpark/Hadoop pipeline for large-scale structured/unstructured data ingestion
+- Added OAuth/SSO authentication to an internal dashboard used across other teams
+
+---
 
 ## Featured Projects
 
-### M.S. Thesis — Low-Rank KV Cache Compression in LLMs: A Second-Order Output Metric and Its Limits *(May 2026 – Aug 2026)*
-Master's thesis, **Iowa State University** (advisor: Ali Jannesari). Built a second-order (Gauss-Newton/Fisher) theory of attention-aware low-rank KV cache compression to map both what existing training-free methods can achieve and where they hit a hard ceiling — code, figure sources, and raw result logs for every table/figure are public at [github.com/dhawalshah48/kv-cache-fisher-thesis](https://github.com/dhawalshah48/kv-cache-fisher-thesis).
-- **Novel metric:** Derived a closed-form **output-Fisher metric** that scores each key direction by how much compressing it would change the attention *output* (not just the key or the attention logit) — extends the first-order KQ-SVD objective and shows it is a special case; yields the optimal rank-r key basis as a whitened generalized eigenproblem at **zero added inference cost**
-- **Benchmarking:** Validated the metric against logit- and variance-based baselines on perplexity (**WikiText-2**) and downstream accuracy (**LongBench**) across **Llama-2-7B, Llama-2-13B**, and, under grouped-query attention, **Mistral-7B**
-- **Theoretical framework:** Recast the metric as the diagonal of the true attention-output Hessian, then derived and measured its off-diagonal corrections in closed form (cross-token and cross-key/value "gates") — large as raw distortion, but shown to barely move the loss under aggressive compression
-- **Rank allocation:** Uncovered a **~5,000×** spread in per-layer importance that uniform rank allocation ignores; designed a loss-Fisher **water-filling** allocation rule that extends the usable compression frontier to **~16×** and beats the published Swift-SVD allocator at matched budget, generalizing cleanly to grouped-query attention
-- **Negative results reported honestly:** Identified and disclosed a failure mode (local-spectrum allocation "detonates") and a case where an architectural baseline (MLA) beats the proposed joint key+value codec — scoping every contribution's actual boundary rather than overselling it
-- **Fundamental limit:** Measured the third-order softmax curvature — the error every second-order metric drops — growing from **31% to 60%** of the metric's own magnitude across the usable compression range, and proved it is irreducibly non-quadratic, establishing a hard ceiling on metric-based low-rank KV compression
-- **Compute:** Ran large-scale experiments on **Delta** (NCSA, via an NSF ACCESS allocation)
+### 🎓 [M.S. Thesis — Low-Rank KV Cache Compression in LLMs](https://github.com/dhawalshah48/kv-cache-fisher-thesis)
+Derived a closed-form output-Fisher metric for attention-aware low-rank KV cache compression — showing where existing training-free methods top out and *why*. Validated against logit- and variance-based baselines on WikiText-2 perplexity and LongBench across Llama-2-7B/13B and Mistral-7B (GQA). Found a ~5,000× spread in per-layer importance and designed a water-filling rank-allocation rule that extends the usable compression frontier ~16×. Also measured and disclosed the method's own failure modes and hard ceiling (third-order softmax curvature). Code, figures, and raw logs are public. Compute: NCSA Delta via an NSF ACCESS allocation.
 
-### Agentic_pruner *(Dec 2025 – May 2026)*
-Built a five-agent framework (Sensitivity Agent, Hardware-Aware Validation Agent, NM Assigner, Cross-Revision Memory Agent, Adaptive Fine-Tuning Strategy Agent) that automates hardware-aware N:M structured sparsity pruning for Vision Transformers — replacing a single fixed pattern applied uniformly to every layer with per-block, hardware- and importance-aware pattern selection.
-- **System design:** Cleanly separated deterministic algorithms (Wanda-style importance scoring, greedy N:M assignment, hardware-tier filtering) from LLM reasoning, routing an LLM (**Llama-3.1-8B via OpenRouter**) only to the two steps where judgment genuinely helps — cross-revision rule extraction and fine-tuning hyperparameter strategy — instead of putting every decision behind an LLM call
-- **Iterative refinement:** Closed the loop between sparsity decisions and observed fine-tuning outcomes via the Memory Agent, which carries lessons across revisions; on DeiT-Tiny/CIFAR-10 this took fine-tuned accuracy from **93.8%** (1 revision) to **95.5%** (3 revisions) at a matched MAC budget
-- **Experiment rigor:** Ran a controlled component-ablation study (SLURM array jobs, 3 seeds per condition) isolating each agent's contribution; hardware- and importance-aware NM assignment lifted fine-tuned top-1 accuracy by up to **~20 points** over blind assignment at the same MAC budget (74–82% → 93–96%), directly validating the core design decision to make pattern selection hardware- and sensitivity-aware
-- **Strategy benchmarking:** Systematically compared 8 sensitivity-scoring × assignment-strategy combinations (Wanda / magnitude / LSA / RIA scoring × drain / spread / proportional / weighted assignment) on ImageNet at a fixed ~50% MAC budget, surfacing a **>20-point** top-1 spread driven purely by strategy choice — turning "which heuristic to use" into a measured decision rather than an assumption
-- **Hardware-verified benchmarking:** Measured real wall-clock inference speedup (not just theoretical MAC reduction) across PyTorch CPU/MPS and CoreML/Apple Neural Engine backends, confirming modest but real gains on consumer edge hardware (1.02–1.10× CPU/MPS, 1.06× ANE) — a hardware-grounded result that fed directly into the Hardware-Aware Validation Agent, since MAC reduction alone doesn't guarantee latency reduction without native sparse-compute support
-- **Infrastructure and scale:** Orchestrated multi-stage ablation sweeps as SLURM array jobs on a shared A100 cluster (**Delta**), with per-job state persisted to `state.json` for reproducible, resumable experiment tracking across **40+** logged runs
-- **Engineering practice:** Wrote a standalone benchmarking script decoupled from the main pipeline so hardware speedup claims can be independently verified across backends; traced actual call paths through the orchestrator to identify and flag unused agent modules as dead code
+### 🧠 Agentic Pruner
+Five-agent **LangGraph** framework (Sensitivity, Hardware-Aware Validation, NM Assigner, Cross-Revision Memory, Adaptive Fine-Tuning Strategy agents) automating hardware-aware N:M structured sparsity pruning for Vision Transformers — replacing a single fixed pattern with per-block, hardware- and importance-aware selection. Cleanly separated deterministic algorithms (Wanda-style scoring, greedy assignment) from the two steps where LLM judgment actually helps. On DeiT-Tiny/CIFAR-10, iterative refinement lifted accuracy from 93.8% to 95.5% across revisions at a matched MAC budget; ran controlled ablations (SLURM array jobs, 3 seeds/condition) across 40+ logged runs on an A100 cluster.
 
-### Image / Video Captioning *(Aug 2024 – Dec 2024)*
-- Built two captioning models: **CNN–LSTM** (InceptionV3) and **ViT–GPT2**
-- Trained on **Flickr8k**; ViT–GPT2 improved **BLEU-4 by 486%** (7.91 vs 1.35) and improved **BLEU-1 by 30.2%** (54.3 vs 41.7)
+### 🔧 jobsearch-mcp
+Personal **MCP server** (Python, `mcp` SDK) exposing 16 tools to Claude for job-fit scoring, resume-tailoring briefs, and outreach drafting. Integrates 5 public ATS APIs (Greenhouse, Lever, Ashby, SmartRecruiters, Recruitee) with SQLite dedup — deliberately draft-only, it never sends email or submits applications on its own.
 
-### PopperGame *(Computational Perception Project)*
-- Interactive computer-vision game using **OpenCV**: track a real ball in-hand with a camera, detect throw motion, and trigger on-screen balloon collision + popping effect  
-- Repo: https://github.com/dhawalshah48/PopperGame *(Python)*
+### 🖼️ Image/Video Captioning
+Compared CNN–LSTM (InceptionV3 encoder) and ViT–GPT2 on Flickr8k; ViT–GPT2 improved BLEU-4 by 486% and BLEU-1 by 30% over the CNN–LSTM baseline.
+
+### 🎈 [PopperGame](https://github.com/dhawalshah48/PopperGame)
+Interactive OpenCV game: tracks a real ball in-hand via webcam, detects a throw motion, and triggers an on-screen balloon-pop effect.
+
+---
 
 ## Technical Skills
-- **Languages / Frameworks:** Python, MATLAB, FastAPI, Streamlit, Outsystems, Next.js, React, Tailwind
-- **AI / ML:** PyTorch, Hugging Face, fastai, scikit-learn, spaCy, OpenCV, NLP, Deep Learning, Computer Vision, Databricks, ClearML, LangGraph, LangChain, SHAP, LIME
-- **LLM Providers / Agents:** OpenAI, Anthropic, Ollama, Qwen/DashScope, multi-agent orchestration, human-in-the-loop workflows
-- **Data:** pandas, NumPy, Matplotlib, Spark, Hadoop, PostgreSQL, MongoDB, MySQL, SQLAlchemy, Alembic
-- **AWS:** S3, SageMaker, Comprehend, Lambda, Textract, EMR, EKS, EC2, RDS, VPC, ALB
-- **DevOps / Tools:** Docker, Docker Compose, Kubernetes, Terraform, Redis, Celery, APScheduler, GitLab CI/CD, GitHub Actions, Git, JWT auth, pytest, Jest, Playwright
-- **Research / ML Systems:** SLURM, HPC cluster orchestration (NCSA Delta / ACCESS), A100 GPU benchmarking, bootstrap significance testing, Holm-Bonferroni correction, ablation study design, LongBench, RULER, needle-in-a-haystack (NIAH) evaluation, WikiText-2, KV cache compression, model compression, quantization, low-rank approximation, PCA, Fisher information, Gauss-Newton approximation, spectral/eigen decomposition, RoPE, MHA/GQA/MLA attention variants, N:M structured sparsity, Wanda pruning, CoreML, Apple Neural Engine, OpenRouter
+
+**Agentic AI / LLM:** LangGraph, LangChain, Model Context Protocol (MCP), agent orchestration, tool/function calling, typed state management, model routing, RAG, prompt engineering, human-in-the-loop workflows, OpenAI / Anthropic / Ollama / Qwen APIs
+
+**ML & Research:** PyTorch, Hugging Face (Datasets, TRL), RLHF (PPO/DPO/GRPO), model fine-tuning & evaluation, ablation design, statistical significance testing (bootstrap, Holm-Bonferroni), reproducibility engineering
+
+**Backend & Data:** Python, FastAPI, PostgreSQL, SQLite, Redis, Pydantic, Alembic, SQL, pandas, NumPy, JWT/OAuth/SSO, RBAC
+
+**Cloud & DevOps:** AWS (EC2, EKS, SageMaker, S3, Comprehend), Docker, Kubernetes, Terraform, GitHub Actions, CI/CD, pytest, Playwright, OpenTelemetry
+
+**Limited/academic exposure:** Scala, Akka Streams, PySpark, Hadoop, Node.js/Express/MongoDB (2019 capstone), Java (coursework)
+
+---
+
+📫 Reach me at **dhawalshah48@gmail.com** or on [LinkedIn](https://www.linkedin.com/in/dhawalshah04/).
