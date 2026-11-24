@@ -56,7 +56,7 @@ Friend's startup; worked directly with the CEO/co-founder on an AI-assisted B2B 
 Derived a closed-form output-Fisher metric for attention-aware low-rank KV cache compression — showing where existing training-free methods top out and *why*. Validated against logit- and variance-based baselines on WikiText-2 perplexity and LongBench across Llama-2-7B/13B and Mistral-7B (GQA). Found a ~5,000× spread in per-layer importance and designed a water-filling rank-allocation rule that extends the usable compression frontier ~16×. Also measured and disclosed the method's own failure modes and hard ceiling (third-order softmax curvature). Code, figures, and raw logs are public. Compute: NCSA Delta via an NSF ACCESS allocation.
 
 ### 📊 [VarRate: Variable-Rate KV Cache Compression](https://arxiv.org/abs/2607.15498)
-*Co-author, arXiv preprint; advised by Dr. Ali Jannesari, with Shahrzad Esmat.*
+*Co-author, arXiv preprint.* Owned the ablation/validation suite and reproducibility work.
 Designed and ran 14 ablation studies with credible baselines and paired bootstrap significance testing (Holm-Bonferroni correction) for a training-free LLM compression method — catching and correcting 2 unverified claims before peer review. Built negative-control experiments to separate a claimed model capability from measurement artifact, backed by controlled A100 latency benchmarking. Root-caused a silent cross-environment reproducibility failure and authored an audit-trail protocol so results reproduce exactly across runs.
 
 ### 🧠 Agentic Pruner
