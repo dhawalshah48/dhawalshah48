@@ -90,12 +90,15 @@ Interactive OpenCV game: tracks a real ball in-hand via webcam, detects a throw 
 ## Publications
 
 **[Low-Rank KV Cache Compression in LLMs: A Second-Order Output Metric and Its Limits](https://www.proquest.com/dissertations-theses/low-rank-kv-cache-compression-llms-second-order/docview/3380554573/se-2?accountid=10906)**
+Derives a closed-form output-Fisher metric for attention-aware low-rank KV cache compression, revealing a ~5,000× spread in per-layer importance and extending the usable compression frontier ~16× via a water-filling rank-allocation rule — while disclosing the method's own failure modes and hard ceiling.
 Dhawal Shah — M.S. Thesis, Iowa State University — Aug 2026 · [code](https://github.com/dhawalshah48/kv-cache-fisher-thesis)
 
 **[VarRate: Training-Free Variable-Rate KV Cache Compression for Long-Context LLMs](https://arxiv.org/abs/2607.15498)**
+A training-free, variable-rate KV cache compression method for long-context LLMs, validated with 14 ablation studies against credible baselines, paired bootstrap significance testing, and negative-control experiments to rule out measurement artifacts.
 Esmat, S.; Shah, D.; Jannesari, A. — arXiv preprint, not peer-reviewed — Jul 2026
 
 **[An Analysis on Use of Big Data in Cloud Computing Environment](https://zenodo.org/records/1288453)**
+A survey of big data processing techniques and architectures for cloud computing environments.
 Shah, D.; Kumbhkar, M. — Zenodo — Jun 2018
 
 ---
