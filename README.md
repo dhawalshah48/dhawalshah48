@@ -55,8 +55,8 @@ Friend's startup; worked directly with the CEO/co-founder on an AI-assisted B2B 
 ### 🎓 [M.S. Thesis — Low-Rank KV Cache Compression in LLMs](https://github.com/dhawalshah48/kv-cache-fisher-thesis)
 Derived a closed-form output-Fisher metric for attention-aware low-rank KV cache compression — showing where existing training-free methods top out and *why*. Validated against logit- and variance-based baselines on WikiText-2 perplexity and LongBench across Llama-2-7B/13B and Mistral-7B (GQA). Found a ~5,000× spread in per-layer importance and designed a water-filling rank-allocation rule that extends the usable compression frontier ~16×. Also measured and disclosed the method's own failure modes and hard ceiling (third-order softmax curvature). Code, figures, and raw logs are public. Compute: NCSA Delta via an NSF ACCESS allocation.
 
-### 📊 VarRate: Variable-Rate KV Cache Compression
-*Co-author, AAAI'27 submission (under review); advised by Dr. Ali Jannesari, with Shahrzad Esmat.*
+### 📊 [VarRate: Variable-Rate KV Cache Compression](https://arxiv.org/abs/2607.15498)
+*Co-author, arXiv preprint; advised by Dr. Ali Jannesari, with Shahrzad Esmat.*
 Designed and ran 14 ablation studies with credible baselines and paired bootstrap significance testing (Holm-Bonferroni correction) for a training-free LLM compression method — catching and correcting 2 unverified claims before peer review. Built negative-control experiments to separate a claimed model capability from measurement artifact, backed by controlled A100 latency benchmarking. Root-caused a silent cross-environment reproducibility failure and authored an audit-trail protocol so results reproduce exactly across runs.
 
 ### 🧠 Agentic Pruner
@@ -89,9 +89,14 @@ Interactive OpenCV game: tracks a real ball in-hand via webcam, detects a throw 
 
 ## Publications
 
-- *Low-Rank KV Cache Compression in LLMs: A Second-Order Output Metric and Its Limits* — M.S. Thesis, Iowa State University (Aug 2026). [ProQuest](https://www.proquest.com/dissertations-theses/low-rank-kv-cache-compression-llms-second-order/docview/3380554573/se-2?accountid=10906)
-- Esmat, S.; **Shah, D.**; Jannesari, A. — *VarRate: Training-Free Variable-Rate KV Cache Compression for Long-Context LLMs* — arXiv preprint, not peer-reviewed (Jul 2026). [arXiv:2607.15498](https://arxiv.org/abs/2607.15498)
-- **Shah, D.**; Kumbhkar, M. — *An Analysis on Use of Big Data in Cloud Computing Environment* — Zenodo (Jun 2018). [Zenodo](https://zenodo.org/records/1288453)
+**[Low-Rank KV Cache Compression in LLMs: A Second-Order Output Metric and Its Limits](https://www.proquest.com/dissertations-theses/low-rank-kv-cache-compression-llms-second-order/docview/3380554573/se-2?accountid=10906)**
+Dhawal Shah — M.S. Thesis, Iowa State University — Aug 2026 · [code](https://github.com/dhawalshah48/kv-cache-fisher-thesis)
+
+**[VarRate: Training-Free Variable-Rate KV Cache Compression for Long-Context LLMs](https://arxiv.org/abs/2607.15498)**
+Esmat, S.; Shah, D.; Jannesari, A. — arXiv preprint, not peer-reviewed — Jul 2026
+
+**[An Analysis on Use of Big Data in Cloud Computing Environment](https://zenodo.org/records/1288453)**
+Shah, D.; Kumbhkar, M. — Zenodo — Jun 2018
 
 ---
 
